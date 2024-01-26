@@ -240,7 +240,7 @@ ul {
 }
 
 .container {
-  max-width: 1158px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -492,10 +492,10 @@ ul {
 .portfolio-list-buttons {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 72px;
-  padding: 0;
 }
 
 .portfolio-buttons {
@@ -530,6 +530,7 @@ ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
   padding: 0;
@@ -905,6 +906,12 @@ ul {
 }
 
 @media screen and (width >= 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
   .first-section {
     padding: 188px 0 188px;
     width: 100%;
@@ -968,6 +975,11 @@ ul {
 
 .fifth-section {
   padding: 120px 0;
+}
+
+.portfolio-list-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 
