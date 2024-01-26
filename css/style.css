@@ -280,7 +280,6 @@ ul {
   line-height: 1.17;
   font-family: var(--logo-font-family);
   letter-spacing: 0.03em;
-  margin-right: 76px;
 }
 
 .second-logo-part {
@@ -696,7 +695,7 @@ ul {
 .customers-element {
   list-style: none;
   height: 88px;
-  flex-basis: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 2);
   width: calc((100% - 96px) / 3);
 }
 
@@ -745,20 +744,12 @@ ul {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.footer-social-media {
-  display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
 }
 
 .footer-section {
   background-color: #2e2f42;
-  padding: 96px 15px;
-  height: 664px;
 }
 
 .footer-logo {
@@ -769,13 +760,16 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-family: var(--logo-font-family);
-  margin-right: 76px;
   display: flex;
   margin-bottom: 16px;
 }
 
 .logo {
   color: #4d5ae5;
+}
+
+.logo-second-part {
+  color: #f4f4f4;
 }
 
 .promote-site {
@@ -786,7 +780,18 @@ ul {
 }
 
 .first-part {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 98px;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
 }
 
 .footer-paragraph {
@@ -845,6 +850,7 @@ ul {
 .second-part {
  display: flex;
  flex-direction: column;
+ align-items: center;
 }
 
 .footer-form {
@@ -855,6 +861,7 @@ ul {
 }
 
 .footer-label {
+  margin-left: 15px;
 }
 
 .footer-label-content {
@@ -890,6 +897,7 @@ ul {
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   border: none;
+  margin: 16px 132px 96px;
 }
 
 @media screen and (width >= 768px) {
@@ -912,6 +920,11 @@ ul {
   .list {
     flex-direction: row;
   }
+
+  .logo {
+    margin-right: 76px;
+  }
+
 
   .second-section {
     padding: 120px 0 120px;
@@ -973,14 +986,28 @@ ul {
 
 .footer-container {
   flex-wrap: nowrap;
+  align-items: baseline;
+  flex-direction: row;
 }
 
 .first-part {
   margin-right: 120px;
+  margin-top: 0;
+  display: inline;
+}
+
+.footer-logo {
+  margin-right: 76px;
+}
+
+.footer-social-media {
+  margin: 0;
 }
 
 .second-part {
   padding-left: 80px;
+  display: flex;
+  align-items: baseline;
  }
 
 .footer-form {
@@ -991,7 +1018,12 @@ ul {
   width: 264px;
 }
 
+.footer-label {
+  margin: 0;
+}
 
-
+.footer-button {
+  margin: 0;
+}
 
 }
