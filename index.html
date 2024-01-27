@@ -27,6 +27,19 @@
           <a class="logo link" href="./index.html"
             >Web<span class="second-logo-part">Studio</span></a
           >
+          <buttton
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="hamburger-svg" width="40" height="50">
+              <use
+                href="./images/icons.svg#menu"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </buttton>
           <ul class="menu">
             <li class="list-items">
               <a class="nav-link nav-link-active link" href="./index.html"
@@ -43,7 +56,7 @@
         </nav>
         <!--Contacts-->
         <address class="contacts-section">
-          <ul class="menu">
+          <ul class="menu-address">
             <li class="list-items">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -527,6 +540,89 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <nav class="nav-elements">
+        <buttton
+          class="menu-toggle js-close-menu modal-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="modal-svg" width="8" height="8">
+            <use
+              href="./images/icons.svg#close-button"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></use>
+          </svg>
+        </buttton>
+        <ul class="hamburger-menu">
+          <li>
+            <a class="menu-items link" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="link menu-items" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="link menu-items" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Contacts-->
+      <address class="contacts-section">
+        <ul class="hamburger-contacts">
+          <li class="list-items">
+            <a class="phone-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="list-items">
+            <a class="email-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="hamburger-social-media">
+        <ul class="hamburger-social-media-list">
+          <li class="footer-social-media-icon">
+            <a class="footer-social-media-links" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-icon">
+            <a class="footer-social-media-links" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-icon">
+            <a class="footer-social-media-links" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-icon">
+            <a class="footer-social-media-links" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
