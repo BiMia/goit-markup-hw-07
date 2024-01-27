@@ -604,6 +604,7 @@ ul {
   flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 72px;
+  margin-left: 16px;
 }
 
 .portfolio-buttons {
@@ -965,6 +966,7 @@ ul {
 .footer-form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 16px;
 }
 
@@ -1009,9 +1011,6 @@ ul {
 }
 
 @media screen and (width >= 768px) {
-  .container {
-    min-width: 768px;
-  }
 
   .header-container {
     min-width: 768px;
@@ -1036,7 +1035,6 @@ ul {
   }
 
   .first-section {
-    width: 768px;
     display: flex;
     justify-content: center;
     padding-top: 188px;
@@ -1050,32 +1048,25 @@ ul {
   .list {
     display: block;
     columns: 2;
-    padding: 0 74px;
+    padding: 0;
+    gap: 72px;
   }
 
   .list-elements {
     align-items: normal;
+    margin-bottom: 72px;
   }
 
   .second-section-paragraph {
     padding-left: 0;
   }
 
-  .forth-section {
-    padding: 96px 0;
-  }
-
   .forth-section-images {
     margin-bottom: 64px;
   }
 
-  .fifth-section {
-    padding: 96px 0;
-  }
-
   .customers-element {
     flex-basis: calc((100% - 48px) / 3);
-    max-width: 168px;
   }
   
   .footer-container {
@@ -1121,11 +1112,11 @@ ul {
   }
 
   .portfolio-list-buttons {
-    margin-left: 70px;
+    padding-left: 91px;
   }
 
   .portfolio-list {
-    justify-content:flex-start;
+    padding: 64px;
   }
 
   .portfolio-content {
@@ -1137,9 +1128,9 @@ ul {
 
 @media screen and (width >= 1158px) {
   .container {
-    width: 1158px;
-    padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+
   }
 
   .header-section {
@@ -1159,6 +1150,9 @@ ul {
     margin: 0;
     gap: 40px;
   }
+  .menu-toggle {
+    display: none;
+  }
 
   .first-section {
     padding: 188px 0 188px;
@@ -1173,9 +1167,9 @@ ul {
   }
 
   .list {
-    flex-direction: row;
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 
   .logo {
@@ -1188,11 +1182,19 @@ ul {
    }
 
   .list-elements {
+    display: flex;
     align-items: flex-start;
   }
 
   .icons-svg {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .icon-svg {
+    display: block;
   }
 
   .second-section-titles {
@@ -1200,6 +1202,7 @@ ul {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
   }
 
   .second-section-paragraph {
@@ -1232,6 +1235,15 @@ ul {
   justify-content: center;
 }
 
+.portfolio-list {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-content {
+  flex-basis: calc((100% - 48px) / 3);
+}
 
 .customers-content {
   flex-wrap: nowrap;
@@ -1279,6 +1291,8 @@ ul {
 
 .footer-form {
   flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
 }
 
 .footer-label-content {
@@ -1286,10 +1300,6 @@ ul {
 }
 
 .footer-label {
-  margin: 0;
-}
-
-.footer-button {
   margin: 0;
 }
 
