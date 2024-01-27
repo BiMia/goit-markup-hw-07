@@ -240,8 +240,7 @@ ul {
 }
 
 .container {
-  padding: 0 16px;
-  margin: 0 auto;
+  max-width: 428px;
 }
 
 .header-container {
@@ -259,6 +258,7 @@ ul {
 .nav-elements {
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 
 .menu {
@@ -462,7 +462,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 112px 54px 240px;
+  padding: 112px 54px;
   width: 428px;
 }
 
