@@ -1015,7 +1015,6 @@ ul {
 @media screen and (width >= 768px) {
   .container {
     min-width: 768px;
-    margin: 0 auto;
   }
 
   .header-container {
@@ -1055,7 +1054,7 @@ ul {
   .list {
     display: block;
     columns: 2;
-    gap: 24px;
+    padding: 0 74px;
   }
 
   .list-elements {
@@ -1067,12 +1066,76 @@ ul {
   }
 
   .forth-section {
-    padding: 0;
+    padding: 96px 0;
   }
 
   .forth-section-images {
     margin-bottom: 64px;
   }
+
+  .fifth-section {
+    padding: 96px 0;
+  }
+
+  .customers-element {
+    flex-basis: calc((100% - 48px) / 3);
+    max-width: 168px;
+  }
+  
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .first-part {
+    align-items: baseline;
+    margin-left: 108px;
+  }
+
+  .footer-social-media {
+    align-items: baseline;
+    margin-top: 100px;
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+
+  .second-part {
+    align-items: baseline;
+    margin-left: 108px;
+    margin-top: 72px;
+  }
+
+  .footer-form {
+    padding-top: 0;
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+
+  .footer-label {
+    margin-left: 0;
+  }
+
+  .footer-label-content {
+    max-width: 264px;
+  }
+
+  .footer-button {
+    margin: 0;
+    margin-left: 24px;
+  }
+
+  .portfolio-list-buttons {
+    margin-left: 70px;
+  }
+
+  .portfolio-list {
+    justify-content:flex-start;
+  }
+
+  .portfolio-content {
+    max-width: calc((100% - 56px) / 2);
+  }
+
 
 }
 
@@ -1116,6 +1179,7 @@ ul {
   .list {
     flex-direction: row;
     display: flex;
+    justify-content: center;
   }
 
   .logo {
@@ -1183,7 +1247,7 @@ ul {
 
 .footer-section {
   padding: 100px 0 100px;
-  height: 312px;
+  max-height: 312px;
 }
 
 .footer-container {
@@ -1198,6 +1262,10 @@ ul {
   display: inline;
 }
 
+.promote-site {
+  min-width: 264px;
+}
+
 .footer-logo {
   margin-right: 76px;
 }
@@ -1210,6 +1278,7 @@ ul {
   padding-left: 80px;
   display: flex;
   align-items: baseline;
+  margin: 0;
  }
 
 .footer-form {
@@ -1217,7 +1286,7 @@ ul {
 }
 
 .footer-label-content {
-  width: 264px;
+  max-width: 264px;
 }
 
 .footer-label {
