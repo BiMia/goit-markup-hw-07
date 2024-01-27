@@ -240,7 +240,7 @@ ul {
 }
 
 .container {
-  max-width: 428px;
+  max-width: 1158px;
 }
 
 .header-container {
@@ -276,8 +276,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: #f4f4f4;
   z-index: 999;
@@ -463,7 +463,6 @@ ul {
   background-size: cover;
   background-position: center;
   padding: 112px 54px;
-  width: 428px;
 }
 
 .hero-content {
@@ -525,7 +524,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .second-section-titles {
@@ -535,6 +533,7 @@ ul {
   line-height: 40px;
   letter-spacing: 0.72px;
   margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .second-section-paragraph {
@@ -561,9 +560,8 @@ ul {
 .list {
   list-style: none;
   display: flex; 
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .third-section {
@@ -731,7 +729,7 @@ ul {
 
 .forth-section {
   background-color: #f4f4fd;
-  padding: 96px 82px;
+  padding: 96px 75px;
 }
 
 .forth-section-images {
@@ -808,7 +806,6 @@ ul {
   list-style: none;
   height: 88px;
   flex-basis: calc((100% - 48px) / 2);
-  width: calc((100% - 96px) / 3);
 }
 
 .customers-link {
@@ -968,7 +965,6 @@ ul {
 .footer-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   padding-top: 16px;
 }
 
