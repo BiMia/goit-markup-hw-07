@@ -1267,19 +1267,21 @@ ul {
 .first-part {
   margin-right: 120px;
   margin-top: 0;
-  display: inline;
+  margin-left: 0;
 }
 
 .promote-site {
-  min-width: 264px;
+  max-width: 264px;
 }
 
 .footer-logo {
   margin-right: 76px;
+  margin-bottom: 32px;
 }
 
 .footer-social-media {
   margin: 0;
+  align-items: baseline;
 }
 
 .second-part {
@@ -1293,6 +1295,7 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: baseline;
+  margin-top: 12px;
 }
 
 .footer-label-content {
