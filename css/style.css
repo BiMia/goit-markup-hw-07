@@ -376,6 +376,7 @@ ul {
   gap: 56px;
   display: flex;
   list-style: none;
+  margin-top: 48px;
 }
 
 .link {
