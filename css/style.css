@@ -316,7 +316,8 @@ ul {
   color: #2E2F42;
   position: absolute;
   right: 0;
-  top: 10px;
+  margin-right: 24px;
+
 }
 
 .hamburger-menu {
@@ -1024,6 +1025,10 @@ ul {
     display: flex;
     gap: 40px;
     list-style: none;
+  }
+
+  .hamburger-svg {
+    display: none;
   }
 
   .menu-address {
